@@ -43,16 +43,16 @@ Each student has to enter respective subject marks.
         <div class="screen-body-item">
           <div class="app-form">
             <div class="app-form-group">
-    <!--2st-->          <input type="text" class="app-form-control" placeholder="WEB PROGRAMMING" id="wd">
+    <!--2st-->          <input type="text" class="app-form-control" placeholder="Algorithm" id="algo">
             </div>
             <div class="app-form-group">
-     <!--3rd-->         <input  type="text"  class="app-form-control"   placeholder="MATHS" id="maths">
+     <!--3rd-->         <input  type="text"  class="app-form-control"   placeholder="Software Systems" id="ss">
             </div>
              <div class="app-form-group">
-      <!--4th-->        <input  type="text"  class="app-form-control"   placeholder="COMPUTER" id="comp">
+      <!--4th-->        <input  type="text"  class="app-form-control"   placeholder="Machine Learning" id="ml">
             </div>
             <div class="app-form-group">
-      <!--5th-->   <input  type="text"  class="app-form-control"   placeholder="PHYSICS" id="phy" >
+      <!--5th-->   <input  type="text"  class="app-form-control"   placeholder="Mathematics for ML" id="mml" >
             </div>
             <div > 
         <!--6th-->      <input type="button" name="" value="showPercentage" class="app-form-button" onclick="calcy()">
@@ -70,14 +70,14 @@ Each student has to enter respective subject marks.
 <script>
   
 const calcy = () =>{
-  let wd = document.getElementById('wd').value;
-  let maths = document.getElementById('maths').value;
-  let comp = document.getElementById('comp').value;
-  let phy = document.getElementById('phy').value;
+  let a = document.getElementById('algo').value;
+  let b = document.getElementById('ss').value;
+  let c = document.getElementById('ml').value;
+  let d = document.getElementById('mml').value;
   let grades = "";
 
 
-  let totalGrades = parseFloat(wd) + parseFloat(maths) + parseFloat(comp) + parseFloat(phy);
+  let totalGrades = parseFloat(a) + parseFloat(b) + parseFloat(c) + parseFloat(d);
   alert(totalGrades);
 
   let perc = (totalGrades/400) * 100;
